@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="" class="logo">WhatsApp</a>
+        <div class="action">
+          <a href=""><ion-icon name="camera-outline"></ion-icon></a>
+          <a href=""><ion-icon name="search-outline"></ion-icon></a>
+          <a href=""><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+        </div>
+      </header>
+
+      <div class="tabs">
+        <input id="chats" type="radio" name="group" checked />
+        <input id="status" type="radio" name="group" />
+        <input id="calls" type="radio" name="group" />
+
+        <div class="buttons">
+          <label for="chats">Chats</label>
+          <label for="status">Status</label>
+          <label for="calls">Calls</label>
+          <div class="underline"></div>
+        </div>
+
+        <div class="quickBtn">
+            <div class="btn message"><ion-icon name="chatbubble"></ion-icon></div>
+            <div class="btn camers">
+                <div class="pencil"><ion-icon name="pencil-sharp"></ion-icon></div>
+                <ion-icon name="camera"></ion-icon>
+            </div>
+            <div class="btn call"><ion-icon name="call"></ion-icon></div>
+        </div>
+
+        <div class="content">
+          <div class="box chats">
+            <div class="data">
+              <div class="chatlist">
+                <div class="block unread">
+                  <div class="imgbx">
+                    <img src="AБезназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Dadam</h4>
+                      <p class="time">Monday, at 16:15</p>
+                    </div>
+                    <div class="message_p">
+                      <p>O'glim yaxshimisan</p>
+                      <b>3</b>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block unread">
+                  <div class="imgbx">
+                    <img src="channels4_profile.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Chingiz</h4>
+                      <p class="time">13:21</p>
+                    </div>
+                    <div class="message_p">
+                      <p>Aka Shaftoli Bomi?</p>
+                      <b>1</b>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block unread">
+                  <div class="imgbx">
+                    <img src="Безназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Elon Musk</h4>
+                      <p class="time">10:20</p>
+                    </div>
+                    <div class="message_p">
+                      <p>Sarvar I give You 100,000$</p>
+                      <b>1</b>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block unread">
+                  <div class="imgbx">
+                    <img src="images.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>HayTech Home</h4>
+                      <p class="time">9:03</p>
+                    </div>
+                    <div class="message_p">
+                      <p>Biz Sizga Tekinga 10 ta uy beramiz</p>
+                      <b>1</b>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block unread">
+                  <div class="imgbx">
+                    <img src="AБезназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Onam</h4>
+                      <p class="time">Yesterday, at 13:03</p>
+                    </div>
+                    <div class="message_p">
+                      <p>Bolam ovqat tayyor kel</p>
+                      <b>1</b>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block unread">
+                  <div class="imgbx">
+                    <img src="BБезназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Chiroyli Qiz</h4>
+                      <p class="time">01:22</p>
+                    </div>
+                    <div class="message_p">
+                      <p>Yozsezchi, nima qivosiz nmaga yozmisiz ee</p>
+                      <b>32</b>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block unread">
+                  <div class="imgbx">
+                    <img src="Donald_Trump_official_portrait.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Donald Trump</h4>
+                      <p class="time">21:07</p>
+                    </div>
+                    <div class="message_p">
+                      <p>Sarvar Please give me 1,000$</p>
+                      <b>3</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box status">
+            <div class="data">
+              <div class="chatlist">
+                <div class="block">
+                  <div class="imgbx">
+                    <img src="channels4_profile.jpg" alt="" />
+                  </div>
+                  <div class="plus">+</div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>MyStatus</h4>
+                    </div>
+                    <div class="message_p">
+                      <p>Tap to add status update</p>
+                    </div>
+                  </div>
+                </div>
+                <label for="">Resent Updates</label>
+                <div class="block unseen">
+                  <div class="imgbx">
+                    <img src="Безназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Elon Musk</h4>
+                    </div>
+                    <div class="message_p">
+                      <p>21 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block unseen">
+                  <div class="imgbx">
+                    <img src="BБезназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Chiroyli Qiz</h4>
+                    </div>
+                    <div class="message_p">
+                      <p>30 minutes ago</p>
+                    </div>
+                  </div>
+                </div>
+                <label for="">Viewed Updates</label>
+                <div class="block seen">
+                  <div class="imgbx">
+                    <img src="AБезназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Dadam</h4>
+                    </div>
+                    <div class="message_p">
+                      <p>Monday, 21:30</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block seen">
+                  <div class="imgbx">
+                    <img src="AБезназвания.jpg" alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <h4>Onam</h4>
+                    </div>
+                    <div class="message_p">
+                      <p>Yesterday, 20:30</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box calls">
+            <div class="data">
+                <div class="chatlist">
+                    <div class="block unread">
+                      <div class="imgbx green">
+                        <ion-icon name="link-outline"></ion-icon>
+                      </div>
+                      <div class="details">
+                        <div class="listHead">
+                          <h4>Create Call Link</h4>
+                        </div>
+                        <div class="message_p">
+                          <p>Share a link for your WhatsApp call</p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <label for="">Recent</label>
+                    <div class="block">
+                        <div class="imgbx">
+                          <img src="AБезназвания.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                          <div class="listHead">
+                            <h4>Onam</h4>
+                          </div>
+                          <div class="message_p incoming">
+                            <p><ion-icon name="arrow-down-outline"></ion-icon> 21/08/2023, 17:15</p>
+                          </div>
+                        </div>
+                        <ion-icon name="call-outline" class="call"></ion-icon>
+                      </div>
+                      
+                      <div class="block">
+                        <div class="imgbx">
+                          <img src="BБезназвания.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                          <div class="listHead">
+                            <h4>Chiroyli Qiz</h4>
+                          </div>
+                          <div class="message_p outgoing">
+                            <p><ion-icon name="arrow-up-outline"></ion-icon> 25/08/2023, 00:33</p>
+                          </div>
+                        </div>
+                        <ion-icon name="call-outline" class="call"></ion-icon>
+                  </div>
+                      <div class="block">
+                        <div class="imgbx">
+                          <img src="BБезназвания.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                          <div class="listHead">
+                            <h4>Chiroyli Qiz</h4>
+                          </div>
+                          <div class="message_p outgoing">
+                            <p><ion-icon name="arrow-up-outline"></ion-icon> 25/08/2023, 00:33</p>
+                          </div>
+                        </div>
+                        <ion-icon name="call-outline" class="call"></ion-icon>
+                  </div>
+                      <div class="block">
+                        <div class="imgbx">
+                          <img src="BБезназвания.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                          <div class="listHead">
+                            <h4>Chiroyli Qiz</h4>
+                          </div>
+                          <div class="message_p outgoing">
+                            <p><ion-icon name="arrow-up-outline"></ion-icon> 25/08/2023, 00:33</p>
+                          </div>
+                        </div>
+                        <ion-icon name="call-outline" class="call"></ion-icon>
+                  </div>
+                      <div class="block">
+                        <div class="imgbx">
+                          <img src="BБезназвания.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                          <div class="listHead">
+                            <h4>Chiroyli Qiz</h4>
+                          </div>
+                          <div class="message_p outgoing">
+                            <p><ion-icon name="arrow-up-outline"></ion-icon> 25/08/2023, 00:34</p>
+                          </div>
+                        </div>
+                        <ion-icon name="call-outline" class="call"></ion-icon>
+                  </div>
+                      <div class="block">
+                        <div class="imgbx">
+                          <img src="BБезназвания.jpg" alt="" />
+                        </div>
+                        <div class="details">
+                          <div class="listHead">
+                            <h4>Chiroyli Qiz</h4>
+                          </div>
+                          <div class="message_p outgoing">
+                            <p><ion-icon name="arrow-up-outline"></ion-icon> 25/08/2023, 00:34</p>
+                          </div>
+                        </div>
+                        <ion-icon name="call-outline" class="call"></ion-icon>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="chatBox">
+        <div class="chatHeader">
+            <div class="imgcontent">
+                <ion-icon name="arrow-back-sharp"></ion-icon>
+                <div class="imageBox">
+                    <img src="photo_2022-12-08_12-37-36.jpg" alt="">
+                </div>
+                <h3>Chingiz<br><span>Online</span></h3>
+            </div>
+            <div class="actionBtns">
+                <ion-icon name="arrow-back"></ion-icon>
+                <ion-icon name="call"></ion-icon>
+                <ion-icon name="ellipsis-vertical"></ion-icon>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
